@@ -4,23 +4,21 @@ userid int,
 activate_day int
 );
 
+insert into table tmp.user_activate  select 1,20170101 from (select 0) t ;
+insert into table tmp.user_activate  select 1,20170102 from (select 0) t ;
+insert into table tmp.user_activate  select 1,20170103 from (select 0) t ;
+insert into table tmp.user_activate  select 1,20170104 from (select 0) t ;
+insert into table tmp.user_activate  select 2,20170101 from (select 0) t ;
+insert into table tmp.user_activate  select 2,20170102 from (select 0) t ;
+insert into table tmp.user_activate  select 2,20170103 from (select 0) t ;
 
 
-insert into tmp.user_activate values(1,20170101);
-insert into tmp.user_activate values(1,20170102);
-insert into tmp.user_activate values(1,20170103);
-insert into tmp.user_activate values(1,20170104);
-insert into tmp.user_activate values(2,20170101);
-insert into tmp.user_activate values(2,20170102);
-insert into tmp.user_activate values(2,20170103);
-
-
-insert into tmp.user_activate values(1,20170110);
-insert into tmp.user_activate values(2,20170110);
-insert into tmp.user_activate values(3,20170111);
-insert into tmp.user_activate values(3,20170112);
-insert into tmp.user_activate values(1,20170112);
-insert into tmp.user_activate values(2,20170112);
+insert into table tmp.user_activate  select 1,20170110 from (select 0) t ;
+insert into table tmp.user_activate  select 2,20170110 from (select 0) t ;
+insert into table tmp.user_activate  select 3,20170111 from (select 0) t ;
+insert into table tmp.user_activate  select 3,20170112 from (select 0) t ;
+insert into table tmp.user_activate  select 1,20170112 from (select 0) t ;
+insert into table tmp.user_activate  select 2,20170112 from (select 0) t ;
 
 --  求用户连续活跃的区间
 RETURE
